@@ -69,12 +69,10 @@ class BaseViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     @objc func backButtonPressed() {
-        
         self.navigationController?.popViewController(animated: true)
     }
 
-    func navigationBarApperance()
-    {
+    func navigationBarApperance() {
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 102/255.0, green: 102/255.0, blue: 102/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
